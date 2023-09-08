@@ -1,10 +1,10 @@
 import { Router } from "express";
 import Validate from "./app/controllers/Validate.js";
-import Load from "./app/controllers/Load.js";
+import Update from "./app/controllers/Update.js";
 
 const router = Router();
 
 router.post('/validar', Validate);
-router.post('/carregar', Load);
+router.post('/atualizar', Update);
 
 export default router;
